@@ -1,0 +1,14 @@
+---
+layout: default
+title: Noutăți
+number: •
+section: n
+permalink: /nou/
+---
+
+<h2>Noutăţi</h2>
+
+{% for post in site.posts %}
+<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<p>{{ post.sumar }}</p>
+{% endfor %}

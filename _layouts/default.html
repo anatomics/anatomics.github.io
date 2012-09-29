@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ page.title }}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<base href="http://anatomics.github.com/" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div id="wrap">
+
+<div id="header">
+<div class="center">
+	<h1><a href="./">Corpul uman</a></h1>
+</div>
+</div>
+
+<div id="main">
+
+<div id="menu">
+<ul>
+<li {% if page.section == 'a' %}class="selected"{% endif %}><a href="./">introducere</a></li>
+<li {% if page.section == 'b' %}class="selected"{% endif %}><a href="./organism/">organismul uman</a></li>
+<li class="plus">≡ relație
+   <ul>
+   <li {% if page.section == 'c' %}class="selected"{% endif %}><a href="./nervos/">nervos</a></li>
+   <li {% if page.section == 'd' %}class="selected"{% endif %}><a href="./endocrin/">endocrin</a></li>
+   <li {% if page.section == 'e' %}class="selected"{% endif %}><a href="./osos/">osos</a></li>
+   <li {% if page.section == 'f' %}class="selected"{% endif %}><a href="./muscular/">muscular</a></li>
+   </ul>
+</li>
+<li class="plus">≡ nutriție
+   <ul>
+   <li {% if page.section == 'g' %}class="selected"{% endif %}><a href="./digestiv/">digestiv</a></li>
+   <li {% if page.section == 'h' %}class="selected"{% endif %}><a href="./circulator/">circulator</a></li>
+   <li {% if page.section == 'i' %}class="selected"{% endif %}><a href="./limfatic/">limfatic</a></li>
+   <li {% if page.section == 'j' %}class="selected"{% endif %}><a href="./respirator/">respirator</a></li>
+   <li {% if page.section == 'k' %}class="selected"{% endif %}><a href="./excretor/">excretor</a></li>
+   </ul>
+</li>
+<li class="plus">≡ reproducere
+   <ul>
+   <li {% if page.section == 'l' %}class="selected"{% endif %}><a href="./reproducator/">reproducător</a></li>
+   </ul>
+</li>
+<li {% if page.section == 'm' %}class="selected"{% endif %}><a href="./glosar/">glosar</a></li>
+<li {% if page.section == 'n' %}class="selected"{% endif %}><a href="./nou/">noutăți</a></li>
+</ul>
+</div>
+
+<div id="content">
+{{ content }}
+</div>
+
+<div id="footer">
+&copy; 2012 Lucian Marin
+</div>
+
+</div>
+</div>
+
+</body>
+
+</html>

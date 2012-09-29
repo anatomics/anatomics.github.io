@@ -1,0 +1,12 @@
+---
+layout: default
+title: Întâi iunie
+sumar: De întâi iunie am pregătit o surpriză pentru toți elevii.
+section: n
+---
+
+h2. {{ page.title }}
+
+blah blah
+
+p(date). {{ page.date | date_to_string }}
