@@ -68,12 +68,12 @@ box-shadow: 0 0 0 0px rgba(0,0,0,0.05);
 }
 
 #main {
-width: 728px;
+width: 860px;
 margin: 0 auto;
 }
 
 #menu {
-width: 228px;
+width: 160px;
 float: left;
 }
 
@@ -105,9 +105,14 @@ color: #0ac;
 color: #0ac;
 }
 
+#sky {
+width: 120px;
+float: left;
+}
+
 #content {
 width: 500px;
-float: right;
+float: left;
 }
 
 h2 {
