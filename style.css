@@ -1,8 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500,300,400&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic);
+
 
 body {
 background-color: #fff;
-font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+font-family: "Lato", Helvetica, Arial, sans-serif;
 font-size: 15px;
 line-height: 25px;
 color: #222;
