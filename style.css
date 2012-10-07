@@ -1,7 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext); */
 
 body {
-background-color: #efe717;
 background-color: #343536;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 font-size: 14px;
@@ -69,10 +68,17 @@ color: #949696;
 margin-bottom: 40px;
 }
 
-.nav li.selected {
-color: #fff;
+.nav li a {
+color: #949696;
 }
 
+.nav li a:hover {
+color: #666768;
+}
+
+.nav li.selected a {
+color: #fff;
+}
 
 h2 {
 font-size: 25px;
