@@ -29,18 +29,6 @@ width: 728px;
 margin: 0 auto;
 }
 
-h1 {
-background: url(logo-black.png) no-repeat;
-display: block;
-width: 56px;
-height: 28px;
-margin: 35px 0;
-}
-
-h1 span {
-display: none;
-}
-
 #ad {
 background-color: #343536;
 display: block;
@@ -80,7 +68,7 @@ color: #fff;
 }
 
 h2 {
-font-size: 25px;
+font-size: 24px;
 margin-bottom: 25px;
 color: #fff;
 }
