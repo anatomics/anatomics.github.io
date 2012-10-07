@@ -133,3 +133,11 @@ maargin-left: 60px;
 #content p img {
 maargin-left: -60px;
 }
+
+#content ol.inline {
+font-size: 12px;
+}
+
+#content ol.inline a {
+color: #343536;
+}
