@@ -86,6 +86,19 @@ margin-bottom: 25px;
 color: #fff;
 }
 
+h3 {
+font-size: 20px;
+color: #fff;
+}
+
+h3 a {
+color: #fff;
+}
+
+h3 a:after {
+content: " Ý";
+}
+
 .metadata {
 font-size: 10px;
 line-height: 21px;
@@ -110,7 +123,7 @@ margin: 0 10px;
 background-color: #fff;
 background-color: #efe717;
 padding: 40px 114px;
-clear: both;
+padding-top: 60px;
 }
 
 #content p {
