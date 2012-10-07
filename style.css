@@ -144,6 +144,14 @@ width: 125px;
 float: left;
 }
 
-#context ul.inline a {
+#context ul.inline li a {
 color: #343536;
+}
+
+#context ul.inline li a:hover {
+color: #949696;
+}
+
+#context ul.inline li.selected a {
+color: #fff;
 }
