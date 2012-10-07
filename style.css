@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext);
 
 body {
 background-color: #343536;
-font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-family: "Source Sans Pro", "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
 font-size: 14px;
 line-height: 25px;
 color: #343536;
