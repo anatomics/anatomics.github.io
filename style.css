@@ -47,8 +47,6 @@ display: block;
 width: 728px;
 height: 90px;
 clear: left;
-border-top: #666 1px solid;
-padding: 14px 0;
 }
 
 #menu {
@@ -149,7 +147,7 @@ color: #343536;
 }
 
 #context ul.inline li a:hover {
-color: #949696;
+color: #666768;
 }
 
 #context ul.inline li.selected a {
