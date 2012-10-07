@@ -127,17 +127,23 @@ padding-top: 60px;
 }
 
 #content p {
-maargin-left: 60px;
+}
+
+#context {
+height: 75px;
+margin-bottom: 25px;
 }
 
 #content p img {
 maargin-left: -60px;
 }
 
-#content ol.inline {
+#context ul.inline {
 font-size: 12px;
+width: 165px;
+float: left;
 }
 
-#content ol.inline a {
+#context ul.inline a {
 color: #343536;
 }
