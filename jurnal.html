@@ -1,13 +1,12 @@
 ---
 layout: default
 title: Jurnal
-number: •
-section: n
+section: jurnal
 ---
 
 <h2>Jurnal</h2>
 
 {% for post in site.posts %}
-<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-<p>{{ post.sumar }}</p>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.sumar }}</p>
 {% endfor %}
