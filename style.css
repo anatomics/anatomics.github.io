@@ -1,134 +1,133 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext);
 
 body {
-background-color: #343536;
-font-family: "Source Sans Pro", "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-font-size: 14px;
-line-height: 25px;
-color: #343536;
-margin: 0;
-padding: 0;
+  background-color: #343536;
+       font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         font-size: 14px;
+       line-height: 25px;
+             color: #343536;
+            margin: 0;
+           padding: 0;
 }
 
 * {
-margin: 0;
-padding: 0;
+            margin: 0;
+           padding: 0;
 }
 
 a {
-text-decoration: none;
+   text-decoration: none;
 -webkit-transition: color 0.3s;
--moz-transition: color 0.3s;
-transition: color 0.3s;
+   -moz-transition: color 0.3s;
+        transition: color 0.3s;
 }
 
 #wrap {
-width: 728px;
-margin: 0 auto;
+             width: 728px;
+            margin: 0 auto;
 }
 
 #ad {
-background-color: #343536;
-display: block;
-width: 728px;
-height: 90px;
-clear: left;
-box-shadow: 0 0 10px #111;
+  background-color: #343536;
+           display: block;
+             width: 728px;
+            height: 90px;
+             clear: left;
+        box-shadow: 0 0 10px #111;
 }
 
 #menu {
-width: 500px;
-margin: 25px 114px;
+             width: 500px;
+            margin: 25px 114px;
 }
 
 .nav {
-list-style: none;
-margin-left: 0;
-font-size: 12px;
-line-height: 20px;
-width: 125px;
-float: left;
-color: #949696;
-margin-bottom: 25px;
+        list-style: none;
+       margin-left: 0;
+         font-size: 12px;
+       line-height: 20px;
+             width: 125px;
+             float: left;
+             color: #949696;
+     margin-bottom: 25px;
 }
 
 .nav li a {
-color: #949696;
+             color: #949696;
 }
 
 .nav li a:hover {
-color: #666768;
+             color: #666768;
 }
 
 .nav li.selected a {
-color: #fff;
+             color: #fff;
 }
 
 /*** HEADINGS ***/
 
 h2 {
-font-size: 24px;
-line-height: 25px;
-margin-bottom: 25px;
-color: #fff;
+         font-size: 24px;
+       line-height: 25px;
+     margin-bottom: 25px;
+             color: #fff;
+}
+
+h2 a {
+             color: #fff;
+}
+
+h2 a:hover {
+             color: #666768;
 }
 
 h3 {
-font-size: 18px;
-line-height: 25px;
-color: #fff;
-}
-
-h3 a {
-color: #fff;
-}
-
-h3 a:after {
-content: " ›";
+         font-size: 18px;
+       line-height: 25px;
+             color: #fff;
 }
 
 h4 {
-font-size: 14px;
-line-height: 25px;
+         font-size: 14px;
+       line-height: 25px;
 }
 
 /*** CONTENT ***/
 
 #content {
-background-color: #fff;
-background-color: #efe717;
-padding: 50px 114px;
-box-shadow: 0 0 10px #111;
+  background-color: #fff;
+  background-color: #efe717;
+           padding: 50px 114px;
+        box-shadow: 0 0 10px #111;
 }
 
 #content p {
-margin: 14px 0;
+            margin: 14px 0;
 }
 
 #context {
-height: 50px;
-padding: 10px 0;
-margin-bottom: 25px;
-border-top: #343536 1px solid;
-border-bottom: #343536 1px solid;
+            height: 50px;
+           padding: 10px 0;
+     margin-bottom: 25px;
+        border-top: #343536 1px solid;
+     border-bottom: #343536 1px solid;
 }
 
 #context ul.inline {
-font-size: 12px;
-list-style: none;
-width: 125px;
-float: left;
+         font-size: 12px;
+        list-style: none;
+             width: 125px;
+             float: left;
 }
 
 #context ul.inline li a {
-color: #343536;
+             color: #343536;
 }
 
 #context ul.inline li a:hover {
-color: #666768;
+             color: #666768;
 }
 
 #context ul.inline li.selected a {
-color: #fff;
+             color: #fff;
 }
