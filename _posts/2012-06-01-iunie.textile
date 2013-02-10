@@ -7,6 +7,6 @@ section: n
 
 h2. {{ page.title }}
 
-Schimbările sunt bune.
-
 p(date). {{ page.date | date_to_string }}
+
+Schimbările sunt bune.

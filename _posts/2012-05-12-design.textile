@@ -7,6 +7,6 @@ section: n
 
 h2. {{ page.title }}
 
-blah blah
-
 p(date). {{ page.date | date_to_string }}
+
+blah blah

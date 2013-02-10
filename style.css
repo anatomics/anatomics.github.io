@@ -23,10 +23,6 @@ text-decoration: none;
 transition: color 0.3s;
 }
 
-p {
-margin: 14px 0;
-}
-
 #wrap {
 width: 728px;
 margin: 0 auto;
@@ -43,7 +39,7 @@ box-shadow: 0 0 10px #111;
 
 #menu {
 width: 500px;
-margin: 20px 114px;
+margin: 25px 114px;
 }
 
 .nav {
@@ -54,7 +50,7 @@ line-height: 20px;
 width: 125px;
 float: left;
 color: #949696;
-margin-bottom: 20px;
+margin-bottom: 25px;
 }
 
 .nav li a {
@@ -68,6 +64,8 @@ color: #666768;
 .nav li.selected a {
 color: #fff;
 }
+
+/*** HEADINGS ***/
 
 h2 {
 font-size: 24px;
@@ -95,35 +93,17 @@ font-size: 14px;
 line-height: 25px;
 }
 
-.metadata {
-font-size: 10px;
-line-height: 21px;
-margin-left: 0;
-padding: 2px 0;
-color: #888;
-border-bottom: #ddd 1px solid;
-}
-
-.metadata span {
-margin-right: 20px;
-padding-right: 30px;
-padding-bottom: 5px;
-border-bottom: #ddd 2px solid;
-}
-
-.metadata strong {
-margin: 0 10px;
-}
+/*** CONTENT ***/
 
 #content {
 background-color: #fff;
 background-color: #efe717;
-padding: 40px 114px;
-padding-top: 60px;
+padding: 50px 114px;
 box-shadow: 0 0 10px #111;
 }
 
 #content p {
+margin: 14px 0;
 }
 
 #context {
