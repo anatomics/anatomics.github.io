@@ -9,7 +9,6 @@ line-height: 25px;
 color: #343536;
 margin: 0;
 padding: 0;
-text-rendering: optimizeLegibility;
 }
 
 * {
@@ -19,6 +18,9 @@ padding: 0;
 
 a {
 text-decoration: none;
+-webkit-transition: color 0.3s;
+-moz-transition: color 0.3s;
+transition: color 0.3s;
 }
 
 p {
@@ -41,8 +43,7 @@ box-shadow: 0 0 10px #111;
 
 #menu {
 width: 500px;
-margin: 40px 0;
-margin-left: 114px;
+margin: 20px 114px;
 }
 
 .nav {
@@ -53,7 +54,7 @@ line-height: 20px;
 width: 125px;
 float: left;
 color: #949696;
-margin-bottom: 40px;
+margin-bottom: 20px;
 }
 
 .nav li a {
