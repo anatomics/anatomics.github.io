@@ -27,6 +27,15 @@
 
 <div id="wrap">
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="menu">
 <ul class="nav">
     <li {% if page.section == 'index' %}class="selected"{% endif %}>
@@ -91,8 +100,10 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 <div id="content">
-{{ content }}
+    {{ content }}
 </div>
+
+<div class="fb-like" data-href="http://omenesc.ro/" data-send="false" data-layout="button_count" data-width="500" data-show-faces="true" data-colorscheme="dark"></div>
 
 </div>
 
