@@ -27,15 +27,6 @@ a {
             margin: 0 auto;
 }
 
-#ad {
-  background-color: #fff;
-           display: block;
-             width: 728px;
-            height: 90px;
-             clear: left;
-        box-shadow: 0 0 10px #111;
-}
-
 #menu {
              width: 500px;
             margin: 25px 114px;
@@ -96,13 +87,22 @@ h4 {
             margin: 25px 0 25px 115px;
 }
 
+#ad {
+  background-color: #fff;
+           display: block;
+             width: 728px;
+            height: 90px;
+}
+
 /*** CONTENT ***/
 
-#content {
-  background-color: #fff;
+#main {
   background-color: #efe717;
-           padding: 50px 114px;
         box-shadow: 0 0 10px #111;
+}
+
+#content {
+           padding: 50px 114px;    
 }
 
 #content p {
