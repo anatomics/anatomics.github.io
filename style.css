@@ -120,6 +120,10 @@ h4 {
         text-align: justify;
 }
 
+#content p:first-child {
+       text-indent: 0px;    
+}
+
 #context {
             height: 50px;
            padding: 10px 0;
