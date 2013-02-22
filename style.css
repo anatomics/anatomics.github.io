@@ -121,7 +121,7 @@ h4 {
 }
 
 #content p:first-child {
-       text-indent: 0px;    
+       text-indent: 0;    
 }
 
 #context {
