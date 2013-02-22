@@ -106,8 +106,13 @@ h4 {
            padding: 50px 114px;    
 }
 
+#content h4 {
+            margin: 14px 0 7px 0;
+       text-indent: 42px;
+}
+
 #content p {
-            margin: 14px 0;
+       text-indent: 42px;
 }
 
 #context {
