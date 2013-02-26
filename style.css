@@ -100,6 +100,7 @@ height: 90px;
 background-color: #efe717;
 box-shadow: 0 0 10px #111;
 clear: left;
+counter-reset: graf;
 }
 
 #content {
@@ -126,7 +127,7 @@ counter-increment: graf;
 text-indent: 0;    
 }
 
-#content:after {
+#main:after {
 content: counter(graf);
 }
 
