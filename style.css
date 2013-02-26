@@ -119,17 +119,14 @@ text-indent: 42px;
 #content p {
 text-indent: 42px;
 text-align: justify;
+counter-increment: graf;
 }
 
 #content p:first-child {
 text-indent: 0;    
 }
 
-p {
-counter-increment: graf;
-}
-
-#main:after {
+#content:after {
 content: counter(graf);
 }
 
