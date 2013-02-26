@@ -101,6 +101,7 @@ background-color: #efe717;
 box-shadow: 0 0 10px #111;
 clear: left;
 counter-reset: graf;
+position: relative;
 }
 
 #content {
@@ -128,7 +129,19 @@ text-indent: 0;
 }
 
 #main:after {
-content: counter(graf);
+content: counter(graf, decimal) " paragrafe";
+
+display: block;
+position: absolute;
+bottom: -50px;
+
+width: 500px;
+height: 25px;
+padding: 0 114px;
+
+font-size: 13px;
+color: #888888;
+text-align: right;
 }
 
 #context {
