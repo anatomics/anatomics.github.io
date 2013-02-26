@@ -98,10 +98,10 @@ height: 90px;
 
 #main {
 background-color: #efe717;
-box-shadow: 0 0 10px #111;
-clear: left;
-counter-reset: graf;
-position: relative;
+box-shadow:       0 0 10px #111;
+clear:            left;
+counter-reset:    graf;
+position:         relative;
 }
 
 #content {
@@ -119,8 +119,8 @@ text-indent: 42px;
 }
 
 #content p {
-text-indent: 42px;
-text-align: justify;
+      text-indent: 42px;
+       text-align: justify;
 counter-increment: graf;
 }
 
@@ -129,26 +129,23 @@ text-indent: 0;
 }
 
 #main:after {
-content: counter(graf, decimal) " paragrafe";
-
-display: block;
-position: absolute;
-bottom: -50px;
-
-width: 500px;
-height: 25px;
-padding: 0 114px;
-
-font-size: 13px;
-color: #888888;
+   content: counter(graf, decimal) " paragrafe";
+   display: block;
+  position: absolute;
+    bottom: -50px;
+     width: 500px;
+    height: 25px;
+   padding: 0 114px;
+ font-size: 12px;
+     color: #888888;
 text-align: right;
 }
 
 #context {
-height: 50px;
-padding: 10px 0;
+height:        50px;
+padding:       10px 0;
 margin-bottom: 25px;
-border-top: #343536 1px solid;
+border-top:    #343536 1px solid;
 border-bottom: #343536 1px solid;
 }
 
