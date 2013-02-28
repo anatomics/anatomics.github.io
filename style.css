@@ -128,7 +128,7 @@ counter-increment: graf;
 text-indent: 0;    
 }
 
-#main:after {
+#mainx:after {
    content: counter(graf, decimal) " paragrafe";
    display: block;
   position: absolute;
