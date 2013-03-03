@@ -91,7 +91,9 @@ margin: 25px 0 25px 115px;
 background-color: #fff;
 display: block;
 width: 728px;
-padding: 8px 0 5px 0;
+padding: 10px 0;
+line-height: 15px;
+height: 15px;
 }
 
 /*** CONTENT ***/
