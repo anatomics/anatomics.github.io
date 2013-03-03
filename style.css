@@ -135,7 +135,7 @@ text-indent: 42px;
 counter-increment: graf;
 }
 
-#content p:first-child {
+#content p.noindent {
 text-indent: 0;    
 }
 
