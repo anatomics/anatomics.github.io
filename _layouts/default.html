@@ -7,38 +7,36 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-276490-2']);
   _gaq.push(['_trackPageview']);
-
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 
 </head>
 
 <body>
 
-<div id="wrap">
+<div id="wrap"> <div id="fb-root"></div>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+  (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <div id="menu">
 <ul class="nav">
     <li {% if page.section == 'index' %}class="selected"{% endif %}>
-        <a href="./">Corpul omenesc</a></li>
+        <a href="./" title="Anatomia corpului uman">Corpul omenesc</a></li>
     <li> &nbsp; </li>
     <li> &nbsp; </li>
     <li> &nbsp; </li>
@@ -48,46 +46,47 @@
     </li>
     -->
     <li {% if page.section == 'contact' %}class="selected"{% endif %}>
-        <a href="./contact.html">Contact</a>
+        <a href="./contact.html" title="Adresă de contact">Contact</a>
     </li>
 </ul>
 <ul class="nav">
     <li {% if page.section == 'nervos' %}class="selected"{% endif %}>
-        <a href="./nervos.html">Nervos</a></li>
+        <a href="./nervos.html" title="Sistemul nervos">Nervos</a></li>
     <li {% if page.section == 'endocrin' %}class="selected"{% endif %}>
-        <a href="./endocrin.html">Endocrin</a></li>
+        <a href="./endocrin.html" title="Sistemul endocrin">Endocrin</a></li>
     <li {% if page.section == 'osos' %}class="selected"{% endif %}>
-        <a href="./osos.html">Osos</a></li>
+        <a href="./osos.html" title="Sistemul osos">Osos</a></li>
     <li {% if page.section == 'muscular' %}class="selected"{% endif %}>
-        <a href="./muscular.html">Muscular</a></li>
+        <a href="./muscular.html" title="Sistemul muscular">Muscular</a></li>
     <li>&nbsp;</li>
 </ul>
 <ul class="nav">
     <li {% if page.section == 'digestiv' %}class="selected"{% endif %}>
-        <a href="./digestiv.html">Digestiv</a></li>
+        <a href="./digestiv.html" title="Sistemul digestiv">Digestiv</a></li>
     <li {% if page.section == 'circulator' %}class="selected"{% endif %}>
-        <a href="./circulator.html">Circulator</a></li>
+        <a href="./circulator.html" title="Sistemul Circulator">Circulator</a></li>
     <li {% if page.section == 'limfatic' %}class="selected"{% endif %}>
-        <a href="./limfatic.html">Limfatic</a></li>
+        <a href="./limfatic.html" title="Sistemul limfatic">Limfatic</a></li>
     <li {% if page.section == 'respirator' %}class="selected"{% endif %}>
-        <a href="./respirator.html">Respirator</a></li>
+        <a href="./respirator.html" title="Sistemul respirator">Respirator</a></li>
     <li {% if page.section == 'excretor' %}class="selected"{% endif %}>
-        <a href="./excretor.html">Excretor</a></li>
+        <a href="./excretor.html" title="Sistemul excretor">Excretor</a></li>
 </ul>
 <ul class="nav">
     <li {% if page.section == 'reproducator' %}class="selected"{% endif %}>
-        <a href="./reproducator.html">Reproducător</a>
+        <a href="./reproducator.html" title="Sistemul reproducător">Reproducător</a>
     </li>
     <li> &nbsp; </li>
     <li> &nbsp; </li>
     <li> &nbsp; </li>
     <li {% if page.section == 'glosar' %}class="selected"{% endif %}>
-       <a href="./glosar.html">Glosar termeni</a>
+       <a href="./glosar.html" title="Glosar cu termeni anatomici">Glosar termeni</a>
     </li>
 </ul>
 </div>
 
 <div id="main">
+
 {% if page.section == 'index' or page.section == 'contact' or page.section == 'glosar' %}
     <div id="ad">
         <script type="text/javascript"><!--
@@ -117,6 +116,7 @@
         </script>
     </div>
 {% endif %}
+
     <div id="content">
         {{ content }}
     </div>
