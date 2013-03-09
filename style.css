@@ -3,7 +3,7 @@
 body {
 background-color: #343536;
 font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-size: 14px;
+font-size: 15px;
 line-height: 25px;
 color: #343536;
 margin: 0;
@@ -35,7 +35,7 @@ margin: 25px 114px;
 .nav {
 list-style: none;
 margin-left: 0;
-font-size: 12px;
+font-size: 13px;
 line-height: 20px;
 width: 125px;
 float: left;

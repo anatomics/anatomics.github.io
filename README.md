@@ -1,4 +1,4 @@
 anatomics.github.com
 ====================
 
-Proiect: anatomia corpului uman.
+Proiect: Corpul omenesc
