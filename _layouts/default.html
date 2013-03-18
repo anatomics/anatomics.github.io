@@ -86,7 +86,7 @@
 
 <div id="main">
 
-{% if page.section == 'index' or page.section == 'contact' or page.section == 'glosar' %}
+{# if page.section == 'index' or page.section == 'contact' or page.section == 'glosar' #}
     <div id="ad">
         <script type="text/javascript"><!--
         google_ad_client = "ca-pub-9499208914818603";
@@ -100,7 +100,7 @@
         src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         </script>
     </div>
-{% else %}
+{% comment %}
     <div id="adsense">
         <script type="text/javascript"><!--
         google_ad_client = "ca-pub-9499208914818603";
@@ -114,7 +114,7 @@
         src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         </script>
     </div>
-{% endif %}
+{% endcomment %}
 
     <div id="content">
         {{ content }}
