@@ -120,6 +120,7 @@ position:         relative;
 }
 
 #content {
+width: 468px;
 margin: 50px auto;    
 }
 
