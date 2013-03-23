@@ -37,11 +37,10 @@ padding: 9px;
 .nav {
 list-style: none;
 font-size: 13px;
-line-height: 20px;
+line-height: 30px;
 width: 450px;
 color: #949696;
-margin-bottom: 10px;
-height: 20px;
+height: 30px;
 display: block;
 }
 
