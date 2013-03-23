@@ -2,7 +2,7 @@
 
 body {
 background-color: #888;
-background: #333 url("http://lucianmarin.com/assets/debut_dark.png");
+background: #333 url("http://lucianmarin.com/assets/debut_dark.png") fixed;
 font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
 line-height: 25px;
