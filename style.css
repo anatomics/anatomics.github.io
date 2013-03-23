@@ -52,6 +52,7 @@ display: block;
 
 .nav li a {
 color: #bbb;
+text-shadow: 0 0 2px #333;
 }
 
 .nav li a:hover {
