@@ -102,6 +102,12 @@ width: 728px;
 height: 90px;
 }
 
+#ad-small {
+width: 468px;
+height: 60px;
+margin: 0 auto;
+}
+
 /*** CONTENT ***/
 
 #main {
