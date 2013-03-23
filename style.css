@@ -124,10 +124,10 @@ margin: 0 auto;
 #main {
 background-color: #efe717;
 background-color: #fff;
-box-shadow:       0 0 10px #222;
-clear:            left;
-counter-reset:    graf;
-position:         relative;
+position: relative;
+clear: left;
+border-radius: 10px;
+box-shadow: 0 0 10px #222;
 }
 
 #content {
