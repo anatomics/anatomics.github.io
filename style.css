@@ -84,6 +84,7 @@ line-height: 25px;
 .fb-like {
 width: 468px;
 margin: 25px auto;
+display: block !important;
 }
 
 #ad {
