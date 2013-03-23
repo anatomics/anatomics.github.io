@@ -28,15 +28,17 @@ margin: 0 auto;
 }
 
 #menu {
-width: 468px;
-margin: 25px auto;
+background-color: #707070;
+width: 450px;
+margin: 25px auto 0 auto;
+padding: 9px;
 }
 
 .nav {
 list-style: none;
 font-size: 13px;
 line-height: 20px;
-width: 468px;
+width: 450px;
 color: #949696;
 margin-bottom: 10px;
 height: 20px;
