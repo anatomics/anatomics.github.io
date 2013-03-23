@@ -31,14 +31,7 @@ margin: 0 auto;
 width: 450px;
 margin: 0 auto;
 padding: 0 9px 9px 9px;
-}
-
-#menu .nav:first-child li {
-    border-top: transparent 5px solid;    
-}
-
-#menu .nav:first-child li:first-child {
-    border-top: #707070 5px solid;
+border-top: #707070 5px solid;    
 }
 
 .nav {
