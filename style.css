@@ -103,6 +103,8 @@ height: 90px;
 }
 
 #ad-small {
+background-color: #e42;
+padding: 8px 16px;
 width: 468px;
 height: 60px;
 margin: 0 auto;
