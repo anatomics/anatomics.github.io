@@ -82,7 +82,8 @@ line-height: 25px;
 }
 
 .fb-like {
-margin: 25px 0 25px 115px;
+width: 468px;
+margin: 25px auto;
 }
 
 #ad {
