@@ -70,13 +70,18 @@ font-size: 24px;
 line-height: 25px;
 margin-bottom: 25px;
 color: #e42;
+border-top: #ddd 7px solid;
+display: block;
+float: left;
+padding-top: 20px;
 }
 
-h2 a {
-}
-
-h2 a:hover {
-color: #888;
+h2:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
 }
 
 h3 {
