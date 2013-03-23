@@ -132,7 +132,8 @@ box-shadow: 0 0 10px #222;
 
 #content {
 width: 468px;
-padding: 30px auto;    
+margin: 0 auto;
+padding: 30px 0;
 }
 
 #content h3 {
