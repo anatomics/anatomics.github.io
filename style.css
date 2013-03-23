@@ -66,20 +66,19 @@ color: #fff;
 /*** HEADINGS ***/
 
 .title {
-    height: 25px;
+    height: 50px;
     width: 468px;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
 }
 
 h2 {
 font-size: 24px;
 line-height: 25px;
-margin-bottom: 25px;
 color: #e42;
-border-top: #ddd 7px solid;
+border-top: #ddd 5px solid;
 display: block;
 float: left;
-padding-top: 20px;
+padding-top: 25px;
 }
 
 h3 {
