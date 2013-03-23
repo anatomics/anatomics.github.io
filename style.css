@@ -170,9 +170,8 @@ text-align: right;
 
 #context {
 height:        50px;
-padding:       10px 0;
+padding:       5px 0 10px 0;
 margin-bottom: 25px;
-border-top:    #ddd 1px solid;
 border-bottom: #ddd 1px solid;
 }
 
