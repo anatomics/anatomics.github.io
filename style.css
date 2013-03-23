@@ -34,12 +34,13 @@ margin: 25px auto;
 
 .nav {
 list-style: none;
-margin-left: 0;
 font-size: 13px;
 line-height: 20px;
 width: 468px;
 color: #949696;
 margin-bottom: 10px;
+display: block;
+height: 20px;
 }
 
 .nav li {
