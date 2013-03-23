@@ -30,8 +30,7 @@ margin: 0 auto;
 #menu {
 width: 450px;
 margin: 0 auto;
-padding: 0 9px 9px 9px;
-border-top: #707070 5px solid;    
+padding: 15px 9px;
 }
 
 .nav {
