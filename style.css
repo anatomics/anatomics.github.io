@@ -110,7 +110,7 @@ height: 90px;
 #ad-small {
 width: 468px;
 height: 60px;
-margin: 0 auto;
+margin: 0 auto -5px auto;
 }
 
 /*** CONTENT ***/
