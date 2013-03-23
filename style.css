@@ -30,8 +30,12 @@ margin: 0 auto;
 #menu {
 background-color: #707070;
 width: 450px;
-margin: 25px auto 0 auto;
+margin: 0 auto;
 padding: 9px;
+}
+
+#menu .nav:first-child li:first-child {
+    border-top: #707070 5px solid;
 }
 
 .nav {
