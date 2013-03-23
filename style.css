@@ -47,6 +47,7 @@ padding: 0 18px 15px 0;
     border-bottom-right-radius: 5px;
     color: #fff;
     padding: 3px 10px;
+    box-shadow: 0 1px 5px #222;
 }
 
 .nav {
