@@ -37,10 +37,15 @@ list-style: none;
 margin-left: 0;
 font-size: 13px;
 line-height: 20px;
-width: 117px;
-float: left;
+width: 468px;
 color: #949696;
-margin-bottom: 25px;
+margin-bottom: 10px;
+}
+
+.nav li {
+    float: left;
+    display: block;
+    width: 90px;
 }
 
 .nav li a {
