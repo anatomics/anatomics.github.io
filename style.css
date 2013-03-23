@@ -45,6 +45,8 @@ padding: 0 18px 15px 0;
     float: left;    
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    color: #fff;
+    padding: 3px 10px;
 }
 
 .nav {
