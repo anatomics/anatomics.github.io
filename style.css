@@ -121,7 +121,7 @@ background-color: #fff;
 position: relative;
 clear: left;
 border-radius: 10px;
-box-shadow: 0 0 10px #222, inset 0 2px 0 2px #e42;
+box-shadow: 0 0 10px #222, inset 0 5px 0 0 #ccc, inset 0 10px 0 0 #bbb;
 border-top: #ddd 5px solid;
 border-bottom: #eee 5px solid;
 }
