@@ -166,7 +166,8 @@ text-indent: 42px;
        text-align: justify;
 }
 
-#content p.noindent {
+#content p.noindent,
+#content ul li p {
 text-indent: 0;    
 }
 
