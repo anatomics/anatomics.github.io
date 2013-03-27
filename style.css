@@ -171,6 +171,11 @@ text-indent: 42px;
 text-indent: 0;    
 }
 
+#content ul {
+margin-left: 42px;
+list-style: square;
+}
+
 #context {
 height:        50px;
 padding:       0 0 10px 0;
@@ -183,6 +188,7 @@ font-size: 12px;
 list-style: none;
 width: 117px;
 float: left;
+margin-left: 0;
 }
 
 #context ul.inline li a {
