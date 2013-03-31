@@ -2,7 +2,7 @@
 
 body {
 background-color: #888;
-background: #333 url("_bg.png") fixed;
+background: #333 url("bg.png") fixed;
 font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
 line-height: 25px;
