@@ -7,7 +7,7 @@
 <meta name="description" content="Studiu cu privire la anatomia corpului uman, a sistemelor și a organelor acestuia în stilul Wikipedia." />
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body class="orange {% if page.section == 'osos' or page.section == 'nervos' or page.section == 'endocrin' or page.section == 'muscular' %}magenta{% endif %} {% if page.section == 'digestiv' or page.section == 'excretor' or page.section == 'circulator' or page.section == 'limfatic' or page.section == 'respirator' %}green{% endif %} {% if page.section == 'reproducator' %}blue{% endif %}">
+<body class="{% if page.section == 'osos' or page.section == 'nervos' or page.section == 'endocrin' or page.section == 'muscular' %}magenta{% elsif page.section == 'digestiv' or page.section == 'excretor' or page.section == 'circulator' or page.section == 'limfatic' or page.section == 'respirator' %}green{% elsif page.section == 'reproducator' %}blue{% else %}orange{% endif %}">
 
 <div id="fb-root"></div>
 
@@ -181,20 +181,50 @@
 <div class="foot">
     <div class="content">
 
+    <div class="adsense">
+    {% if page.section == 'osos' or page.section == 'nervos' or page.section == 'endocrin' or page.section == 'muscular' %}
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-9499208914818603";
+        /* anatomics berry */
+        google_ad_slot = "2773888810";
+        google_ad_width = 468;
+        google_ad_height = 60;
+        //-->
+        </script>
+    {% elsif page.section == 'digestiv' or page.section == 'excretor' or page.section == 'circulator' or page.section == 'limfatic' or page.section == 'respirator' %}
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-9499208914818603";
+        /* anatomics yogurt */
+        google_ad_slot = "5866956013";
+        google_ad_width = 468;
+        google_ad_height = 60;
+        //-->
+        </script>
+    {% elsif page.section == 'reproducator' %}
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-9499208914818603";
+        /* anatomics grape */
+        google_ad_slot = "1576357211";
+        google_ad_width = 468;
+        google_ad_height = 60;
+        //-->
+        </script>
+    {% else %}
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-9499208914818603";
+        /* anatomics orange */
+        google_ad_slot = "2913489616";
+        google_ad_width = 468;
+        google_ad_height = 60;
+        //-->
+        </script>
+    {% endif %}
+        <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+    </div>
+
 {% comment %}
-<div class="adsense">
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-9499208914818603";
-/* anatomie */
-google_ad_slot = "6802290016";
-google_ad_width = 468;
-google_ad_height = 60;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</div>
 {% endcomment %}
 
 <div class="facebook">
