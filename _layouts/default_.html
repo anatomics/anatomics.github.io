@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<title>{{ page.title }}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Studiu cu privire la anatomia corpului uman, a sistemelor și a organelor acestuia în stilul Wikipedia." />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-276490-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+
+<div id="wrap"> <div id="fb-root"></div>
+
+<script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ro_RO/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="menu">
+
+<div class="logo">
+    <a href="./" title="Anatomia corpului uman">Corpul omenesc</a></li>
+</div>
+
+{% comment %}
+<ul class="nav">
+    <li {% if page.section == 'index' %}class="selected"{% endif %}>
+        <a href="./" title="Anatomia corpului uman">Corpul omenesc</a></li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <!--
+    <li {% if page.section == 'contact' %}class="selected"{% endif %}>
+        <a href="./contact.html" title="Adresă de contact">Contact</a>
+    </li>
+    -->
+    <li {% if page.section == 'glosar' %}class="selected"{% endif %}>
+       <a href="./glosar.html" title="Glosar cu termeni anatomici">Glosar termeni</a>
+    </li>
+</ul>
+{% endcomment %}
+<ul class="nav">
+    <li {% if page.section == 'nervos' %}class="selected"{% endif %}>
+        <a href="./nervos.html" title="Sistemul nervos">Nervos</a></li>
+    <li {% if page.section == 'endocrin' %}class="selected"{% endif %}>
+        <a href="./endocrin.html" title="Sistemul endocrin">Endocrin</a></li>
+    <li {% if page.section == 'osos' %}class="selected"{% endif %}>
+        <a href="./osos.html" title="Sistemul osos">Osos</a></li>
+    <li {% if page.section == 'muscular' %}class="selected"{% endif %}>
+        <a href="./muscular.html" title="Sistemul muscular">Muscular</a></li>
+    <li {% if page.section == 'reproducator' %}class="selected"{% endif %}>
+        <a href="./reproducator.html" title="Sistemul reproducător">Reproducător</a>
+    </li>
+</ul>
+<ul class="nav">
+    <li {% if page.section == 'digestiv' %}class="selected"{% endif %}>
+        <a href="./digestiv.html" title="Sistemul digestiv">Digestiv</a></li>
+    <li {% if page.section == 'circulator' %}class="selected"{% endif %}>
+        <a href="./circulator.html" title="Sistemul Circulator">Circulator</a></li>
+    <li {% if page.section == 'limfatic' %}class="selected"{% endif %}>
+        <a href="./limfatic.html" title="Sistemul limfatic">Limfatic</a></li>
+    <li {% if page.section == 'respirator' %}class="selected"{% endif %}>
+        <a href="./respirator.html" title="Sistemul respirator">Respirator</a></li>
+    <li {% if page.section == 'excretor' %}class="selected"{% endif %}>
+        <a href="./excretor.html" title="Sistemul excretor">Excretor</a></li>
+</ul>
+</div>
+
+<div id="main">
+{% comment %}
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9499208914818603";
+/* anatomie link */
+google_ad_slot = "1401670812";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9499208914818603";
+/* anatomics link */
+google_ad_slot = "2583489614";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9499208914818603";
+/* anatomics plus */
+google_ad_slot = "7702726116";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+{% endcomment %}
+
+    <div id="content">
+        {{ content }}
+    </div>
+    
+    <div id="ad-small">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9499208914818603";
+/* anatomie */
+google_ad_slot = "6802290016";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </div>
+</div>
+
+<div class="fb-like" data-href="http://omenesc.ro/" data-send="false" data-layout="button_count" data-width="468" data-show-faces="true" data-colorscheme="dark"></div>
+
+</div>
+
+</body>
+
+</html>
