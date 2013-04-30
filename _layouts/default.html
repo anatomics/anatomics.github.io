@@ -3,148 +3,242 @@
 <head>
 <title>{{ page.title }}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
 <meta name="description" content="Studiu cu privire la anatomia corpului uman, a sistemelor și a organelor acestuia în stilul Wikipedia." />
 <link rel="stylesheet" type="text/css" href="style.css" />
-
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-276490-2']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
 </head>
+<body class="{% if page.section == 'osos' or page.section == 'nervos' or page.section == 'endocrin' or page.section == 'muscular' %}magenta{% elsif page.section == 'digestiv' or page.section == 'excretor' or page.section == 'circulator' or page.section == 'limfatic' or page.section == 'respirator' %}green{% elsif page.section == 'reproducator' %}blue{% else %}orange{% endif %}">
 
-<body>
-
-<div id="wrap"> <div id="fb-root"></div>
+<div id="fb-root"></div>
 
 <script>
   (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  js.src = "//connect.facebook.net/ro_RO/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div id="menu">
+<div class="head">
+    <div class="content">
 
-<div class="logo">
-    <a href="./" title="Anatomia corpului uman">Corpul omenesc</a></li>
+    <div class="square left"><a href="contact.html">…</a></div>
+    <div class="square right"><a href="glosar.html">?</a></div>
+
+{% if page.section == 'index' %}        
+    <h4><a href="index.html">Corpul</a></h4>
+{% else %}      
+    <h4><span class="larr">&larr;</span> <a href="index.html">{{ page.section }}</a></h4>
+{% endif %}
+
+{% if page.section == 'index' %}
+    <h2>Omenesc</h2>
+{% else %}       
+    <h2>{{ page.title }}</h2>
+{% endif %}
+
+{% if page.section == 'index' %}        
+    <ul class="before">
+        <li class="empty">&nbsp;</li>
+        <li class="empty">&nbsp;</li>
+        <li><a href="limfatic.html">Limfatic</a></li>
+        <li><a href="circulator.html">Circulator</a></li>
+    </ul>
+    <ul>
+        <li><a href="nervos.html">Nervos</a></li>
+        <li><a href="osos.html">Osos</a></li>
+        <li><a href="muscular.html">Muscular</a></li>
+        <li><a href="reproducator.html">Reproducător</a></li>
+    </ul>
+    <ul class="last">
+        <li><a href="digestiv.html">Digestiv</a></li>
+        <li><a href="excretor.html">Excretor</a></li>
+        <li><a href="endocrin.html">Endocrin</a></li>
+        <li><a href="respirator.html">Respirator</a></li>
+    </ul>
+{% endif %}
+
+{% if page.section == 'osos' %}        
+    <ul class="second">
+    	<li {% if page.child == 'oase' %}class="selected"{% endif %}>
+    	   <a href="osos-oase.html">Oase</a>
+    	</li>
+    	<li {% if page.child == 'schelet' %}class="selected"{% endif %}>
+    	   <a href="osos-schelet.html">Schelet</a>
+        </li>
+    	<li {% if page.child == 'ligamente' %}class="selected"{% endif %}>
+    	   <a href="osos-ligamente.html">Ligamente</a>
+    	</li>
+    </ul>
+    <ul class="last">
+    	<li {% if page.child == 'cartilaje' %}class="selected"{% endif %}>
+    	   <a href="osos-cartilaje.html">Cartilaje</a>
+        </li>
+    	<li {% if page.child == 'articulatii' %}class="selected"{% endif %}>
+    	   <a href="osos-articulatii.html">Articulații</a>
+    	</li>
+    	<li {% if page.child == 'piele' %}class="selected"{% endif %}>
+    	   <a href="osos-piele.html">Piele</a>
+    	</li>
+    </ul>
+{% endif %}
+
+{% if page.section == 'nervos' %}        
+    <ul class="second">
+    	<li {% if page.child == 'celule' %}class="selected"{% endif %}>
+    	   <a href="nervos-celule.html">Celule</a>
+    	</li>
+    	<li {% if page.child == 'periferic' %}class="selected"{% endif %}>
+    	   <a href="nervos-periferic.html">SNP</a>
+    	</li>
+    	<li {% if page.child == 'ochi' %}class="selected"{% endif %}>
+    	   <a href="nervos-ochi.html">Ochii</a>
+    	</li>
+    	<li {% if page.child == 'vorbire' %}class="selected"{% endif %}>
+    	   <a href="nervos-vorbire.html">Vorbirea</a>
+    	</li>
+    </ul>
+    <ul class="last">
+    	<li {% if page.child == 'receptori' %}class="selected"{% endif %}>
+    	   <a href="nervos-receptori.html">Receptori</a>
+    	</li>
+    	<li {% if page.child == 'central' %}class="selected"{% endif %}>
+    	   <a href="nervos-central.html">SNC</a>
+    	</li>
+    	<li {% if page.child == 'urechi' %}class="selected"{% endif %}>
+    	   <a href="nervos-urechi.html">Urechile</a>
+    	</li>
+    	<li {% if page.child == 'coordonare' %}class="selected"{% endif %}>
+    	   <a href="nervos-coordonare.html">Coordonarea</a>
+    	</li>
+    </ul>
+{% endif %}
+
+{% if page.section == 'muscular' %}        
+    <ul class="second">
+    	<li {% if page.child == 'scheletici' %}class="selected"{% endif %}>
+    	   <a href="muscular-scheletici.html">Scheletici</a>
+    	</li>
+    	<li {% if page.child == 'cardiac' %}class="selected"{% endif %}>
+    	   <a href="muscular-cardiac.html">Cardiac</a>
+    	</li>
+    	<li {% if page.child == 'structura' %}class="selected"{% endif %}>
+    	   <a href="muscular-structura.html">Structura</a>
+    	</li>
+    	<li {% if page.child == 'proprietati' %}class="selected"{% endif %}>
+    	   <a href="muscular-proprietati.html">Proprietăți</a>
+    	</li>
+    </ul>
+    <ul class="last">
+    	<li {% if page.child == 'netezi' %}class="selected"{% endif %}>
+    	   <a href="muscular-netezi.html">Netezi</a>
+    	</li>
+    	<li {% if page.child == 'tendoane' %}class="selected"{% endif %}>
+    	   <a href="muscular-tendoane.html">Tendoane</a>
+    	</li>
+    	<li {% if page.child == 'grupe' %}class="selected"{% endif %}>
+    	   <a href="muscular-grupe.html">Grupe</a>
+    	</li>
+    	<li {% if page.child == 'contractii' %}class="selected"{% endif %}>
+    	   <a href="muscular-contractii.html">Contracții</a>
+    	</li>
+    </ul>
+{% endif %}
+
+{% if page.section == 'reproducator' %}        
+    <ul class="second last">
+    	<li {% if page.child == 'feminin' %}class="selected"{% endif %}>
+    	   <a href="reproducator-feminin.html">Feminin</a>
+    	</li>
+    	<li {% if page.child == 'masculin' %}class="selected"{% endif %}>
+    	   <a href="reproducator-masculin.html">Masculin</a>
+    	</li>
+    	<li {% if page.child == 'ereditate' %}class="selected"{% endif %}>
+    	   <a href="reproducator-ereditate.html">Ereditate</a>
+    	</li>
+    	<li {% if page.child == 'reproducere' %}class="selected"{% endif %}>
+    	   <a href="reproducator-reproducere.html">Reproducere</a>
+    	</li>
+    </ul>
+{% endif %}
+
+{% if page.section == 'index' or page.section == 'nervos' or page.section == 'osos' or page.section == 'muscular' or page.section == 'reproducator' %}
+{% else %}
+    <p class="space">&nbsp;</p>
+{% endif %}
+  
+    </div>
 </div>
 
-{% comment %}
-<ul class="nav">
-    <li {% if page.section == 'index' %}class="selected"{% endif %}>
-        <a href="./" title="Anatomia corpului uman">Corpul omenesc</a></li>
-    <li>&nbsp;</li>
-    <li>&nbsp;</li>
-    <li>&nbsp;</li>
-    <!--
-    <li {% if page.section == 'contact' %}class="selected"{% endif %}>
-        <a href="./contact.html" title="Adresă de contact">Contact</a>
-    </li>
-    -->
-    <li {% if page.section == 'glosar' %}class="selected"{% endif %}>
-       <a href="./glosar.html" title="Glosar cu termeni anatomici">Glosar termeni</a>
-    </li>
-</ul>
-{% endcomment %}
-<ul class="nav">
-    <li {% if page.section == 'nervos' %}class="selected"{% endif %}>
-        <a href="./nervos.html" title="Sistemul nervos">Nervos</a></li>
-    <li {% if page.section == 'endocrin' %}class="selected"{% endif %}>
-        <a href="./endocrin.html" title="Sistemul endocrin">Endocrin</a></li>
-    <li {% if page.section == 'osos' %}class="selected"{% endif %}>
-        <a href="./osos.html" title="Sistemul osos">Osos</a></li>
-    <li {% if page.section == 'muscular' %}class="selected"{% endif %}>
-        <a href="./muscular.html" title="Sistemul muscular">Muscular</a></li>
-    <li {% if page.section == 'reproducator' %}class="selected"{% endif %}>
-        <a href="./reproducator.html" title="Sistemul reproducător">Reproducător</a>
-    </li>
-</ul>
-<ul class="nav">
-    <li {% if page.section == 'digestiv' %}class="selected"{% endif %}>
-        <a href="./digestiv.html" title="Sistemul digestiv">Digestiv</a></li>
-    <li {% if page.section == 'circulator' %}class="selected"{% endif %}>
-        <a href="./circulator.html" title="Sistemul Circulator">Circulator</a></li>
-    <li {% if page.section == 'limfatic' %}class="selected"{% endif %}>
-        <a href="./limfatic.html" title="Sistemul limfatic">Limfatic</a></li>
-    <li {% if page.section == 'respirator' %}class="selected"{% endif %}>
-        <a href="./respirator.html" title="Sistemul respirator">Respirator</a></li>
-    <li {% if page.section == 'excretor' %}class="selected"{% endif %}>
-        <a href="./excretor.html" title="Sistemul excretor">Excretor</a></li>
-</ul>
-</div>
-
-<div id="main">
-{% comment %}
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-9499208914818603";
-/* anatomie link */
-google_ad_slot = "1401670812";
-google_ad_width = 468;
-google_ad_height = 15;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-9499208914818603";
-/* anatomics link */
-google_ad_slot = "2583489614";
-google_ad_width = 728;
-google_ad_height = 15;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-9499208914818603";
-/* anatomics plus */
-google_ad_slot = "7702726116";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-{% endcomment %}
-
-    <div id="content">
+<div class="main">
+    <div class="content">
         {{ content }}
     </div>
-    
-    <div id="ad-small">
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-9499208914818603";
-/* anatomie */
-google_ad_slot = "6802290016";
-google_ad_width = 468;
-google_ad_height = 60;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
+</div>
+
+<div class="foot">
+    <div class="content">
+
+    <div class="adsense">
+    {% if page.section == 'osos' or page.section == 'nervos' or page.section == 'endocrin' or page.section == 'muscular' %}
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-9499208914818603";
+        /* anatomics berry */
+        google_ad_slot = "2773888810";
+        google_ad_width = 468;
+        google_ad_height = 60;
+        //-->
+        </script>
+    {% elsif page.section == 'digestiv' or page.section == 'excretor' or page.section == 'circulator' or page.section == 'limfatic' or page.section == 'respirator' %}
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-9499208914818603";
+        /* anatomics yogurt */
+        google_ad_slot = "5866956013";
+        google_ad_width = 468;
+        google_ad_height = 60;
+        //-->
+        </script>
+    {% elsif page.section == 'reproducator' %}
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-9499208914818603";
+        /* anatomics grape */
+        google_ad_slot = "1576357211";
+        google_ad_width = 468;
+        google_ad_height = 60;
+        //-->
+        </script>
+    {% else %}
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-9499208914818603";
+        /* anatomics orange */
+        google_ad_slot = "2913489616";
+        google_ad_width = 468;
+        google_ad_height = 60;
+        //-->
+        </script>
+    {% endif %}
+        <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+    </div>
+
+{% comment %}
+{% endcomment %}
+
+<div class="facebook">
+    <div class="fb-like" data-href="http://omenesc.ro/" data-send="false" data-width="500" data-show-faces="true" data-font="lucida grande"></div> <!-- data-action="recommend" -->
+</div>
+
     </div>
 </div>
 
-<div class="fb-like" data-href="http://omenesc.ro/" data-send="false" data-layout="button_count" data-width="468" data-show-faces="true" data-colorscheme="dark"></div>
-
+<div class="logo">
+    <a href="http://lucianmarin.com/">
+        <img src="lm-logo.png" width="28" height="14">
+    </a>
 </div>
 
 </body>
-
 </html>
