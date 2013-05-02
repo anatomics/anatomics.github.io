@@ -35,13 +35,23 @@
     <div class="head">
         <div class="content">
 
-            <div class="square left"><a href="contact.html">…</a></div>
-            <div class="square right"><a href="glosar.html">?</a></div>
+            <div class="square left">
+                <a href="contact.html">…</a>
+            </div>
+
+            <div class="square right">
+                <a href="glosar.html">?</a>
+            </div>
 
             {% if page.section == 'index' %}        
-                <h4><a href="index.html">Corpul</a></h4>
+                <h4>
+                    <a href="index.html">Corpul</a>
+                </h4>
             {% else %}      
-                <h4><span class="larr">&larr;</span> <a href="index.html">{{ page.section }}</a></h4>
+                <h4>
+                    <span class="larr">&larr;</span>
+                    <a href="index.html">{{ page.section }}</a>
+                </h4>
             {% endif %}
 
             {% if page.section == 'index' %}
@@ -52,22 +62,46 @@
 
             {% if page.section == 'index' %}        
                 <ul class="before">
-                    <li class="empty">&nbsp;</li>
-                    <li class="empty">&nbsp;</li>
-                    <li><a href="limfatic.html">Limfatic</a></li>
-                    <li><a href="circulator.html">Circulator</a></li>
+                    <li class="empty">
+                        &nbsp;
+                    </li>
+                    <li class="empty">
+                        &nbsp;
+                    </li>
+                    <li>
+                        <a href="limfatic.html">Limfatic</a>
+                    </li>
+                    <li>
+                        <a href="circulator.html">Circulator</a>
+                    </li>
                 </ul>
                 <ul>
-                    <li><a href="nervos.html">Nervos</a></li>
-                    <li><a href="osos.html">Osos</a></li>
-                    <li><a href="muscular.html">Muscular</a></li>
-                    <li><a href="reproducator.html">Reproducător</a></li>
+                    <li>
+                        <a href="nervos.html">Nervos</a>
+                    </li>
+                    <li>
+                        <a href="osos.html">Osos</a>
+                    </li>
+                    <li>
+                        <a href="muscular.html">Muscular</a>
+                    </li>
+                    <li>
+                        <a href="reproducator.html">Reproducător</a>
+                    </li>
                 </ul>
                 <ul class="last">
-                    <li><a href="digestiv.html">Digestiv</a></li>
-                    <li><a href="excretor.html">Excretor</a></li>
-                    <li><a href="endocrin.html">Endocrin</a></li>
-                    <li><a href="respirator.html">Respirator</a></li>
+                    <li>
+                        <a href="digestiv.html">Digestiv</a>
+                    </li>
+                    <li>
+                        <a href="excretor.html">Excretor</a>
+                    </li>
+                    <li>
+                        <a href="endocrin.html">Endocrin</a>
+                    </li>
+                    <li>
+                        <a href="respirator.html">Respirator</a>
+                    </li>
                 </ul>
             {% endif %}
 
@@ -194,38 +228,38 @@
             <div class="adsense">
                 {% if page.section == 'osos' or page.section == 'nervos' or page.section == 'endocrin' or page.section == 'muscular' %}
                     <script type="text/javascript"><!--
-                    google_ad_client = "ca-pub-9499208914818603";
-                    /* anatomics berry */
-                    google_ad_slot = "2773888810";
-                    google_ad_width = 468;
-                    google_ad_height = 60;
+                        google_ad_client = "ca-pub-9499208914818603";
+                        /* anatomics berry */
+                        google_ad_slot = "2773888810";
+                        google_ad_width = 468;
+                        google_ad_height = 60;
                     //-->
                     </script>
                 {% elsif page.section == 'digestiv' or page.section == 'excretor' or page.section == 'circulator' or page.section == 'limfatic' or page.section == 'respirator' %}
                     <script type="text/javascript"><!--
-                    google_ad_client = "ca-pub-9499208914818603";
-                    /* anatomics yogurt */
-                    google_ad_slot = "5866956013";
-                    google_ad_width = 468;
-                    google_ad_height = 60;
+                        google_ad_client = "ca-pub-9499208914818603";
+                        /* anatomics yogurt */
+                        google_ad_slot = "5866956013";
+                        google_ad_width = 468;
+                        google_ad_height = 60;
                     //-->
                     </script>
                 {% elsif page.section == 'reproducator' %}
                     <script type="text/javascript"><!--
-                    google_ad_client = "ca-pub-9499208914818603";
-                    /* anatomics grape */
-                    google_ad_slot = "1576357211";
-                    google_ad_width = 468;
-                    google_ad_height = 60;
+                        google_ad_client = "ca-pub-9499208914818603";
+                        /* anatomics grape */
+                        google_ad_slot = "1576357211";
+                        google_ad_width = 468;
+                        google_ad_height = 60;
                     //-->
                     </script>
                 {% else %}
                     <script type="text/javascript"><!--
-                    google_ad_client = "ca-pub-9499208914818603";
-                    /* anatomics orange */
-                    google_ad_slot = "2913489616";
-                    google_ad_width = 468;
-                    google_ad_height = 60;
+                        google_ad_client = "ca-pub-9499208914818603";
+                        /* anatomics orange */
+                        google_ad_slot = "2913489616";
+                        google_ad_width = 468;
+                        google_ad_height = 60;
                     //-->
                     </script>
                 {% endif %}
@@ -239,11 +273,12 @@
 
         </div>
     </div>
-
-    <div class="logo">
-        <a href="http://lucianmarin.com/">
-            <img src="lm-logo.png" width="28" height="14">
-        </a>
-    </div>
+    <!--
+        <div class="logo">
+            <a href="http://lucianmarin.com/">
+                <img src="lm-logo.png" width="28" height="14">
+            </a>
+        </div>
+    -->
 </body>
 </html>
