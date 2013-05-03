@@ -123,7 +123,7 @@ body {
                 z-index: 7;
                 visibility: hidden;
                 opacity: 0;
-                transition: opacity 0.3s;
+                transition: opacity 0.3s, color 0.3s;
                 }
                 .head h4 ul li {
                     display: block;
@@ -229,7 +229,7 @@ body {
         border-bottom: #eee 28px solid;
         }
 
-/*** orange ***/
+/* orange */
 
     .orange .head .square.left,
     .orange .adsense:before {
@@ -255,7 +255,7 @@ body {
         color: #ff584c;
         }
 
-/*** green / yogurt ***/
+/* green / yogurt */
 
     .green .head .square.left,
     .green .adsense:before {
@@ -284,7 +284,7 @@ body {
         color: #009e6f;
         }
 
-/*** blue / grape ***/
+/* blue / grape */
 
     .blue .head .square.left,
     .blue .adsense:before {
@@ -309,7 +309,7 @@ body {
         color: #0088ce;
         }
 
-/*** magenta / berry ***/
+/* magenta / berry */
 
     .magenta .head .square.left,
     .magenta .adsense:before {
@@ -334,7 +334,7 @@ body {
         color: #c352bf;
         }
 
-/*** after-resets ***/
+/* after-resets */
 
         .head .square.left a:hover,
         .head .square.right a:hover {
