@@ -103,9 +103,9 @@ line-height: 25px;
 }
 
 .fb-like {
-width: 468px;
-margin: 25px auto;
+margin: 25px 0 25px 132px;
 display: block !important;
+width: 100px;
 }
 
 #ad {
