@@ -1,1 +1,9 @@
+name: Corpul Omenesc
+description: Anatomia corpului uman
+url: http://omenesc.ro
+
+markdown: redcarpet
+
 permalink: /jurnal/:title.html
+
+relative_permalinks: false
