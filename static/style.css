@@ -45,7 +45,7 @@ padding: 0 18px 15px 0;
 .logo a {
     background-color: #e42;
     display: block;
-    float: left;    
+    float: left;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: #fff;
@@ -130,6 +130,8 @@ height: 90px;
 width: 468px;
 height: 60px;
 margin: 0 auto -5px auto;
+border-radius: 5px;
+overflow: hidden;
 }
 
 /*** CONTENT ***/
@@ -172,7 +174,7 @@ text-indent: 42px;
 
 #content p.noindent,
 #content ul li p {
-text-indent: 0;    
+text-indent: 0;
 }
 
 #content ul {
