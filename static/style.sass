@@ -16,6 +16,7 @@ body
     font-family: "Clear Sans", sans-serif
     font-size: 14px
     line-height: 20px
+    cursor: default
 
 a
     color: $black
@@ -37,13 +38,14 @@ a
         width: 40px
         height: 20px
         text-align: center
-        color: $whitesmoke
         position: absolute
         top: -20px
         right: 0
-        div
-            width: 20px
+        a
+            color: $whitesmoke
+            display: block
             float: left
+            width: 20px
         .left
             background-color: $gray
         .right
@@ -51,8 +53,15 @@ a
     h5
         font-size: $caps
         text-transform: uppercase
+        line-height: 15px
     h1
-        margin-bottom: 20px
+        font-size: 25px
+        line-height: 30px
+        margin-bottom: 10px
+        padding-bottom: 5px
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
     ul
         font-size: $caps
         font-weight: bold
@@ -98,17 +107,7 @@ a
             padding-top: 0
     p
         padding: 5px 0
-    ul
-        overflow: hidden
-        padding: 10px 0
-        a
-            color: $gray
-            &:hover
-                color: $black
-        li
-            display: block
-            float: left
-            width: 25%
+        cursor: text
 
 .footer
     padding: 20px 0

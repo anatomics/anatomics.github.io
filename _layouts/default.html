@@ -11,7 +11,6 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
         ga('create', 'UA-276490-2', 'omenesc.ro');
         ga('send', 'pageview');
     </script>
@@ -22,14 +21,24 @@
 <div class="header">
     <div class="content">
         <div class="square">
-            <div class="left">C</div>
-            <div class="right">O</div>
+            <a class="left" href="/">C</a>
+            <a class="right" href="/">O</a>
         </div>
         <h5>
-            <a href="/">{{ page.section }}</a>
+            {% if page.section == "osos" %}
+                <a href="/osos/">{{ page.section }}</a>
+            {% elsif page.section == "nervos" %}
+                <a href="/nervos/">{{ page.section }}</a>
+            {% elsif page.section == "muscular" %}
+                <a href="/muscular/">{{ page.section }}</a>
+            {% elsif page.section == "reproducator" %}
+                <a href="/reproducator/">{{ page.section }}</a>
+            {% else %}
+                <a href="/">{{ page.section }}</a>
+            {% endif %}
         </h5>
         <h1>
-            <a href="/">{{ page.title }}</a>
+            {{ page.title }}
         </h1>
         {% if page.section == "osos" %}
             {% include osos.html %}
