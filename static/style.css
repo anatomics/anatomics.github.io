@@ -32,6 +32,10 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header ul li:nth-child(4), .header ul li:nth-child(8) { border-right: 0 none; padding-right: 0; width: calc(25% - 21px); }
 
+.header ul .paginated:first-letter { text-decoration: underline; }
+
+.header ul .selected a { color: black; }
+
 .main p { padding: 5px 0; }
 
 .main ul { overflow: hidden; padding: 10px 0; }
