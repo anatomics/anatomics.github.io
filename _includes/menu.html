@@ -1,32 +1,32 @@
 <ul class="three">
-    <li class="paginated">
+    <li class="paginated {% if page.url contains 'muscular' %}selected{% endif %}">
         <a href="/muscular/" title="Sistemul muscular">Muscular</a>
     </li>
-    <li class="paginated">
+    <li class="paginated {% if page.url contains 'nervos' %}selected{% endif %}">
         <a href="/nervos/" title="Sistemul nervos">Nervos</a>
     </li>
-    <li class="paginated">
+    <li class="paginated {% if page.url contains 'osos' %}selected{% endif %}">
         <a href="/osos/" title="Sistemul osos">Osos</a>
     </li>
-    <li class="paginated">
+    <li class="paginated {% if page.url contains 'reproducator' %}selected{% endif %}">
         <a href="/reproducator/" title="Sistemul reproducător">Reproducător</a>
     </li>
-    {% if page.section == 'circulator' %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains 'circulator' %}selected{% endif %}">
         <a href="/circulator.html" title="Sistemul Circulator">Circulator</a>
     </li>
-    {% if page.section == 'digestiv' %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains 'digestiv' %}selected{% endif %}">
         <a href="/digestiv.html" title="Sistemul digestiv">Digestiv</a>
     </li>
-    {% if page.section == 'limfatic' %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains 'limfatic' %}selected{% endif %}">
         <a href="/limfatic.html" title="Sistemul limfatic">Limfatic</a>
     </li>
-    {% if page.section == 'respirator' %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains 'respirator' %}selected{% endif %}">
         <a href="/respirator.html" title="Sistemul respirator">Respirator</a>
     </li>
-    {% if page.section == 'endocrin' %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="last {% if page.url contains 'endocrin' %}selected{% endif %}">
         <a href="/endocrin.html" title="Sistemul endocrin">Endocrin</a>
     </li>
-    {% if page.section == 'excretor' %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="last {% if page.url contains 'excretor' %}selected{% endif %}">
         <a href="/excretor.html" title="Sistemul excretor">Excretor</a>
     </li>
 </ul>

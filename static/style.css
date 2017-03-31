@@ -4,11 +4,13 @@ body { background-color: gainsboro; font-family: "Clear Sans", sans-serif; font-
 
 a { color: black; text-decoration: none; transition: color 0.5s; }
 
-.content { margin: 0 auto; max-width: 468px; }
+.content { margin: 0 auto; max-width: 468px; position: relative; }
 
-.main { background-color: white; padding: 30px 0; }
+.main { background-color: white; padding: 25px 0; }
 
-.header .square { width: 40px; height: 20px; margin-left: 428px; text-align: center; color: whitesmoke; }
+.header { padding-top: 20px; }
+
+.header .square { width: 40px; height: 20px; text-align: center; color: whitesmoke; position: absolute; top: -20px; right: 0; }
 
 .header .square div { width: 20px; float: left; }
 
@@ -32,11 +34,11 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header ul a:hover { color: black; }
 
-.header ul li { display: block; float: left; line-height: 25px; height: 25px; border-right: silver 1px solid; padding: 0 20px; width: calc(25% - 41px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.header ul li { display: block; float: left; line-height: 25px; height: 25px; border-right: silver 1px solid; padding-left: 15px; width: calc(25% - 16px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-.header ul li:nth-child(1), .header ul li:nth-child(5), .header ul li:nth-child(9) { padding-left: 0; width: calc(25% - 21px); }
+.header ul li:nth-child(4n+1) { padding-left: 0; width: calc(25% - 1px); }
 
-.header ul li:nth-child(4), .header ul li:nth-child(8) { border-right: 0 none; padding-right: 0; width: calc(25% - 21px); }
+.header ul li:nth-child(4n) { border-right: 0 none; }
 
 .header ul .last { padding-bottom: 5px; }
 
@@ -62,4 +64,8 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .footer .sponsor { color: gray; float: right; }
 
-.adsense { background-color: whitesmoke; width: 468px; height: 60px; margin: 0 auto; margin-top: 25px; }
+.adsense { background-color: whitesmoke; width: 468px; height: 60px; margin: 0 auto; margin-top: 20px; }
+
+@media (max-width: 468px) { .header .square { right: 15px; }
+  .content { padding: 0 15px; }
+  .adsense { display: none; } }
