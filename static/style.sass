@@ -66,6 +66,9 @@ a
             border-right: $silver 1px solid
             padding: 0 20px
             width: calc(25% - 41px)
+            overflow: hidden
+            text-overflow: ellipsis
+            white-space: nowrap
             &:nth-child(1), &:nth-child(5), &:nth-child(9)
                 padding-left: 0
                 width: calc(25% - 21px)
@@ -80,6 +83,10 @@ a
             color: $black
 
 .main
+    h4
+        padding-top: 10px
+        &:first-child
+            padding-top: 0
     p
         padding: 5px 0
     ul
@@ -102,4 +109,7 @@ a
 
 .adsense
     background-color: $whitesmoke
-    margin-top: 30px
+    width: 468px
+    height: 60px
+    margin: 0 auto
+    margin-top: 25px

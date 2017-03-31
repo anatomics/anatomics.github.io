@@ -1,16 +1,16 @@
 <div id="context">
     <ul class="inline">
+        {% if include.page == "ereditate" %}<li class="selected">{% else %}<li>{% endif %}
+            <a href="/reproducator/ereditate.html">Ereditarea</a>
+        </li>
         {% if include.page == "feminin" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/reproducator/feminin.html">Ap. genital feminin</a>
+            <a href="/reproducator/feminin.html">Feminin</a>
         </li>
         {% if include.page == "masculin" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/reproducator/masculin.html">Ap. genital masculin</a>
+            <a href="/reproducator/masculin.html">Masculin</a>
         </li>
         {% if include.page == "reproducere" %}<li class="selected">{% else %}<li>{% endif %}
             <a href="/reproducator/reproducere.html">Reproducerea</a>
-        </li>
-        {% if include.page == "ereditate" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/reproducator/ereditate.html">Ereditarea</a>
         </li>
     </ul>
 </div>

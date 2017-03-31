@@ -21,8 +21,8 @@
 <div class="header">
     <div class="content">
         <div class="square">
-            <div class="left">?</div>
-            <div class="right">!</div>
+            <div class="left">C</div>
+            <div class="right">O</div>
         </div>
         <h5>
             <a href="/">{{ page.section }}</a>
@@ -30,73 +30,34 @@
         <h1>
             <a href="/">{{ page.title }}</a>
         </h1>
-
-        {% comment %}
-        <ul class="nav">
-            {% if page.section == 'index' %}<li class="selected">{% else %}<li>{% endif %}
-                <a href="/" title="Anatomia corpului uman">Corpul omenesc</a>
-            </li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            {% if page.section == 'contact' %}<li class="selected">{% else %}<li>{% endif %}
-                <a href="./contact.html" title="Adresă de contact">Contact</a>
-            </li>
-            {% if page.section == 'glosar' %}<li class="selected">{% else %}<li>{% endif %}
-               <a href="/glosar.html" title="Glosar cu termeni anatomici">Glosar termeni</a>
-            </li>
-        </ul>
-        {% endcomment %}
-
-        <ul class="nav">
-            <li class="paginated">
-                <a href="/muscular/" title="Sistemul muscular">Muscular</a>
-            </li>
-            <li class="paginated">
-                <a href="/nervos/" title="Sistemul nervos">Nervos</a>
-            </li>
-            <li class="paginated">
-                <a href="/osos/" title="Sistemul osos">Osos</a>
-            </li>
-            <li class="paginated">
-                <a href="/reproducator/" title="Sistemul reproducător">Reproducător</a>
-            </li>
-            {% if page.section == 'circulator' %}<li class="selected">{% else %}<li>{% endif %}
-                <a href="/circulator.html" title="Sistemul Circulator">Circulator</a>
-            </li>
-            {% if page.section == 'digestiv' %}<li class="selected">{% else %}<li>{% endif %}
-                <a href="/digestiv.html" title="Sistemul digestiv">Digestiv</a>
-            </li>
-            {% if page.section == 'limfatic' %}<li class="selected">{% else %}<li>{% endif %}
-                <a href="/limfatic.html" title="Sistemul limfatic">Limfatic</a>
-            </li>
-            {% if page.section == 'respirator' %}<li class="selected">{% else %}<li>{% endif %}
-                <a href="/respirator.html" title="Sistemul respirator">Respirator</a>
-            </li>
-            {% if page.section == 'endocrin' %}<li class="selected">{% else %}<li>{% endif %}
-                <a href="/endocrin.html" title="Sistemul endocrin">Endocrin</a>
-            </li>
-            {% if page.section == 'excretor' %}<li class="selected">{% else %}<li>{% endif %}
-                <a href="/excretor.html" title="Sistemul excretor">Excretor</a>
-            </li>
-        </ul>
+        {% if page.section == "osos" %}
+            {% include osos.html %}
+        {% elsif page.section == "nervos" %}
+            {% include nervos.html %}
+        {% elsif page.section == "muscular" %}
+            {% include muscular.html %}
+        {% elsif page.section == "reproducator" %}
+            {% include reproducator.html %}
+        {% else %}
+            {% include menu.html %}
+        {% endif %}
     </div>
 </div>
 
 <div class="main">
     <div class="content">
         {{ content }}
-        <div class="adsense">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- anatomie -->
-            <ins class="adsbygoogle"
-                 style="display:block;width:468px;height:60px"
-                 data-ad-client="ca-pub-9499208914818603"
-                 data-ad-slot="6802290016"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+    </div>
+    <div class="adsense">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- anatomie -->
+        <ins class="adsbygoogle"
+             style="display:block;width:468px;height:60px"
+             data-ad-client="ca-pub-9499208914818603"
+             data-ad-slot="6802290016"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 </div>
 

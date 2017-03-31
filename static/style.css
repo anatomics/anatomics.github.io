@@ -26,7 +26,7 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header ul a:hover { color: black; }
 
-.header ul li { display: block; float: left; line-height: 25px; height: 25px; border-right: silver 1px solid; padding: 0 20px; width: calc(25% - 41px); }
+.header ul li { display: block; float: left; line-height: 25px; height: 25px; border-right: silver 1px solid; padding: 0 20px; width: calc(25% - 41px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .header ul li:nth-child(1), .header ul li:nth-child(5), .header ul li:nth-child(9) { padding-left: 0; width: calc(25% - 21px); }
 
@@ -35,6 +35,10 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 .header ul .paginated:first-letter { text-decoration: underline; }
 
 .header ul .selected a { color: black; }
+
+.main h4 { padding-top: 10px; }
+
+.main h4:first-child { padding-top: 0; }
 
 .main p { padding: 5px 0; }
 
@@ -50,4 +54,4 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .footer .sponsor { color: gray; float: right; }
 
-.adsense { background-color: whitesmoke; margin-top: 30px; }
+.adsense { background-color: whitesmoke; width: 468px; height: 60px; margin: 0 auto; margin-top: 25px; }
