@@ -33,10 +33,6 @@ a
     max-width: 468px
     position: relative
 
-.main
-    background-color: $white
-    padding: 25px 0
-
 .header
     padding-top: 20px
     .square
@@ -110,6 +106,10 @@ a
             color: $navy
 
 .main
+    background-color: $white
+    box-shadow: 0 0 10px $silver
+    padding-top: 0
+    padding-bottom: 25px
     h4
         padding-top: 10px
         &:first-child
@@ -133,11 +133,13 @@ a
     width: 468px
     height: 60px
     margin: 0 auto
-    margin-top: 20px
+    margin-bottom: 20px
 
 @media (max-width: 468px)
     .header .square
         right: 15px
+    .main
+        padding-top: 25px
     .content
         padding: 0 15px
     .adsense

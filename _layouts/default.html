@@ -21,8 +21,8 @@
 <div class="header">
     <div class="content">
         <div class="square">
-            <a class="left" href="/">C</a>
-            <a class="right" href="/">O</a>
+            <a class="left" href="/">&nbsp;</a>
+            <a class="right" href="/">&nbsp;</a>
         </div>
         <h5>
             {% if page.section == "osos" %}
@@ -55,9 +55,6 @@
 </div>
 
 <div class="main">
-    <div class="content">
-        {{ content }}
-    </div>
     <div class="adsense">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- anatomie -->
@@ -68,6 +65,9 @@
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
+    </div>
+    <div class="content">
+        {{ content }}
     </div>
 </div>
 
