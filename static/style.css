@@ -46,7 +46,7 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header ul .selected a { color: #132B43; }
 
-.main { background-color: white; box-shadow: 0 0 10px silver; padding-top: 0; padding-bottom: 25px; }
+.main { background-color: white; box-shadow: 0 0 10px silver; padding-bottom: 20px; }
 
 .main h4 { padding-top: 10px; }
 
@@ -65,7 +65,7 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 .adsense { background-color: whitesmoke; width: 468px; height: 60px; margin: 0 auto; margin-bottom: 20px; }
 
 @media (max-width: 468px) { .header .square { right: 15px; }
-  .main { padding-top: 25px; }
+  .main { padding-top: 20px; }
   .content { padding: 0 15px; }
   .adsense { display: none; } }
 
