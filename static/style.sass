@@ -50,10 +50,15 @@ a
     h1
         margin-bottom: 20px
     ul
-        height: 75px
         font-size: $caps
         font-weight: bold
         text-transform: uppercase
+        &.one
+            height: 30px
+        &.two
+            height: 55px
+        &.three
+            height: 80px
         a
             color: $gray
             &:hover
@@ -76,6 +81,8 @@ a
                 border-right: 0 none
                 padding-right: 0
                 width: calc(25% - 21px)
+        .last
+            padding-bottom: 5px
         .paginated
             &:first-letter
                 text-decoration: underline

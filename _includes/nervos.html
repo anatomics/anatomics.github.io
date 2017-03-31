@@ -1,28 +1,26 @@
-<div id="context">
-    <ul class="inline">
-        {% if include.page == "celule" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/nervos/celule.html">Celulele</a>
-        </li>
-        {% if include.page == "receptori" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/nervos/receptori.html">Receptorii</a>
-        </li>
-        {% if include.page == "periferic" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/nervos/periferic.html">Periferic</a>
-        </li>
-        {% if include.page == "central" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/nervos/central.html">Central</a>
-        </li>
-        {% if include.page == "ochi" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/nervos/ochi.html">Ochii</a>
-        </li>
-        {% if include.page == "urechi" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/nervos/urechi.html">Urechile</a>
-        </li>
-        {% if include.page == "vorbire" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/nervos/vorbire.html">Vorbirea</a>
-        </li>
-        {% if include.page == "coordonare" %}<li class="selected">{% else %}<li>{% endif %}
-            <a href="/nervos/coordonare.html">Coordonarea</a>
-        </li>
-    </ul>
-</div>
+<ul class="two">
+    {% if include.page == "celule" %}<li class="selected">{% else %}<li>{% endif %}
+        <a href="/nervos/celule.html">Celulele</a>
+    </li>
+    {% if include.page == "central" %}<li class="selected">{% else %}<li>{% endif %}
+        <a href="/nervos/central.html">Central</a>
+    </li>
+    {% if include.page == "periferic" %}<li class="selected">{% else %}<li>{% endif %}
+        <a href="/nervos/periferic.html">Periferic</a>
+    </li>
+    {% if include.page == "receptori" %}<li class="selected">{% else %}<li>{% endif %}
+        <a href="/nervos/receptori.html">Receptorii</a>
+    </li>
+    <li class="last {% if include.page == "vorbire" %}selected{% endif %}">
+        <a href="/nervos/vorbire.html">Vorbirea</a>
+    </li>
+    <li class="last {% if include.page == "urechi" %}selected{% endif %}">
+        <a href="/nervos/urechi.html">Urechile</a>
+    </li>
+    <li class="last {% if include.page == "ochi" %}selected{% endif %}">
+        <a href="/nervos/ochi.html">Ochii</a>
+    </li>
+    <li class="last {% if include.page == "coordonare" %}selected{% endif %}">
+        <a href="/nervos/coordonare.html">Coordonarea</a>
+    </li>
+</ul>
