@@ -1,14 +1,14 @@
 <ul class="one">
-    <li class="last {% if page.slug == "ereditate" %}selected{% endif %}">
+    <li class="last {% if page.url contains "ereditate" %}selected{% endif %}">
         <a href="/reproducator/ereditate.html">Ereditarea</a>
     </li>
-    <li class="last {% if page.slug == "feminin" %}selected{% endif %}">
+    <li class="last {% if page.url contains "feminin" %}selected{% endif %}">
         <a href="/reproducator/feminin.html">Feminin</a>
     </li>
-    <li class="last {% if page.slug == "masculin" %}selected{% endif %}">
+    <li class="last {% if page.url contains "masculin" %}selected{% endif %}">
         <a href="/reproducator/masculin.html">Masculin</a>
     </li>
-    <li class="last {% if page.slug == "reproducere.html" %}selected{% endif %}">
+    <li class="last {% if page.url contains "reproducere" %}selected{% endif %}">
         <a href="/reproducator/reproducere.html">Reproducerea</a>
     </li>
 </ul>

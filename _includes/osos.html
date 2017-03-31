@@ -1,20 +1,20 @@
 <ul class="two">
-    {% if include.page == "cartilaje" %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains "cartilaje" %}selected{% endif %}">
         <a href="/osos/cartilaje.html">Cartilajele</a>
     </li>
-    {% if include.page == "oase" %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains "oase" %}selected{% endif %}">
         <a href="/osos/oase.html">Oasele</a>
     </li>
-    {% if include.page == "piele" %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains "piele" %}selected{% endif %}">
         <a href="/osos/piele.html">Pielea</a>
     </li>
-    {% if include.page == "articulatii" %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains "articulatii" %}selected{% endif %}">
         <a href="/osos/articulatii.html">Articulațiile</a>
     </li>
-    <li class="last {% if include.page == "ligamente" %}selected{% endif %}">
+    <li class="last {% if page.url contains "ligamente" %}selected{% endif %}">
         <a href="/osos/ligamente.html">Ligamentele</a>
     </li>
-    <li class="last {% if include.page == "schelet" %}selected{% endif %}">
+    <li class="last {% if page.url contains "schelet" %}selected{% endif %}">
         <a href="/osos/schelet.html">Scheletul</a>
     </li>
 </ul>

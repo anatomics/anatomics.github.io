@@ -1,26 +1,26 @@
 <ul class="two">
-    {% if include.page == "celule" %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains "celule" %}selected{% endif %}">
         <a href="/nervos/celule.html">Celulele</a>
     </li>
-    {% if include.page == "central" %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains "central" %}selected{% endif %}">
         <a href="/nervos/central.html">Central</a>
     </li>
-    {% if include.page == "periferic" %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains "periferic" %}selected{% endif %}">
         <a href="/nervos/periferic.html">Periferic</a>
     </li>
-    {% if include.page == "receptori" %}<li class="selected">{% else %}<li>{% endif %}
+    <li class="{% if page.url contains "receptori" %}selected{% endif %}">
         <a href="/nervos/receptori.html">Receptorii</a>
     </li>
-    <li class="last {% if include.page == "vorbire" %}selected{% endif %}">
+    <li class="last {% if page.url contains "vorbire" %}selected{% endif %}">
         <a href="/nervos/vorbire.html">Vorbirea</a>
     </li>
-    <li class="last {% if include.page == "urechi" %}selected{% endif %}">
+    <li class="last {% if page.url contains "urechi" %}selected{% endif %}">
         <a href="/nervos/urechi.html">Urechile</a>
     </li>
-    <li class="last {% if include.page == "ochi" %}selected{% endif %}">
+    <li class="last {% if page.url contains "ochi" %}selected{% endif %}">
         <a href="/nervos/ochi.html">Ochii</a>
     </li>
-    <li class="last {% if include.page == "coordonare" %}selected{% endif %}">
+    <li class="last {% if page.url contains "coordonare" %}selected{% endif %}">
         <a href="/nervos/coordonare.html">Coordonarea</a>
     </li>
 </ul>
