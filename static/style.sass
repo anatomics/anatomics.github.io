@@ -5,6 +5,11 @@ $silver: silver
 $gray: gray
 $black: black
 
+$navy: #132B43
+$teal: #00868C
+$orange: #F4B810
+$red: #F0542C
+
 $caps: 12px
 
 *
@@ -42,18 +47,21 @@ a
         top: -20px
         right: 0
         a
-            color: $whitesmoke
             display: block
             float: left
             width: 20px
         .left
-            background-color: $gray
+            color: mix($orange, $white, 80%)
+            background-color: $orange
         .right
-            background-color: $black
+            color: mix($red, $white, 80%)
+            background-color: $red
     h5
         font-size: $caps
         text-transform: uppercase
         line-height: 15px
+    h5 a
+        color: $navy
     h1
         font-size: 25px
         line-height: 30px
@@ -62,6 +70,7 @@ a
         overflow: hidden
         text-overflow: ellipsis
         white-space: nowrap
+        color: $teal
     ul
         font-size: $caps
         font-weight: bold
@@ -98,7 +107,7 @@ a
             &:first-letter
                 text-decoration: underline
         .selected a
-            color: $black
+            color: $navy
 
 .main
     h4
@@ -113,6 +122,8 @@ a
 
 .footer
     padding: 20px 0
+    a
+        color: $navy
     .sponsor
         color: $gray
         float: right
@@ -131,3 +142,15 @@ a
         padding: 0 15px
     .adsense
         display: none
+
+@font-face
+    font-family: "Clear Sans"
+    font-style: normal
+    font-weight: normal
+    src: url(/static/clearsans/regular.woff) format("woff")
+
+@font-face
+    font-family: "Clear Sans"
+    font-style: normal
+    font-weight: bold
+    src: url(/static/clearsans/bold.woff) format("woff")
