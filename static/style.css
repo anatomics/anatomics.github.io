@@ -12,15 +12,17 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header .square a { display: block; float: left; width: 20px; }
 
-.header .square .left { color: #f6c640; background-color: #F4B810; }
+.header .square .left { color: #f1a04e; background-color: #e82; }
 
-.header .square .right { color: #f37656; background-color: #F0542C; }
+.header .square .right { color: #f1694e; background-color: #e42; }
 
 .header h5 { font-size: 12px; text-transform: uppercase; line-height: 15px; }
 
-.header h5 a { color: #132B43; }
+.header h5 a { color: gray; }
 
-.header h1 { font-size: 25px; line-height: 30px; margin-bottom: 10px; padding-bottom: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #00868C; }
+.header h5 a.selected { color: #248; }
+
+.header h1 { font-size: 25px; line-height: 30px; margin-bottom: 10px; padding-bottom: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #288; }
 
 .header ul { font-size: 12px; font-weight: bold; text-transform: uppercase; }
 
@@ -32,7 +34,7 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header ul a { color: gray; }
 
-.header ul a:hover { color: #132B43; }
+.header ul a:hover { color: #248; }
 
 .header ul li { display: block; float: left; line-height: 25px; height: 25px; border-right: silver 1px solid; padding-left: 15px; width: calc(25% - 16px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
@@ -44,9 +46,9 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header ul .paginated:first-letter { text-decoration: underline; }
 
-.header ul .selected a { color: #132B43; }
+.header ul .selected a { color: #248; }
 
-.main { background-color: white; box-shadow: 0 0 10px silver; padding-bottom: 20px; }
+.main { background-color: white; box-shadow: 0 0 10px 0 silver; padding-bottom: 20px; }
 
 .main h4 { padding-top: 10px; }
 
@@ -58,7 +60,7 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .footer { padding: 20px 0; }
 
-.footer a { color: #132B43; }
+.footer a { color: #248; }
 
 .footer .sponsor { color: gray; float: right; }
 

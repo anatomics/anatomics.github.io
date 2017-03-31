@@ -5,10 +5,10 @@ $silver: silver
 $gray: gray
 $black: black
 
-$navy: #132B43
-$teal: #00868C
-$orange: #F4B810
-$red: #F0542C
+$navy: #248
+$teal: #288
+$orange: #e82
+$red: #e42
 
 $caps: 12px
 
@@ -57,7 +57,9 @@ a
         text-transform: uppercase
         line-height: 15px
     h5 a
-        color: $navy
+        color: $gray
+        &.selected
+            color: $navy
     h1
         font-size: 25px
         line-height: 30px
@@ -107,7 +109,7 @@ a
 
 .main
     background-color: $white
-    box-shadow: 0 0 10px $silver
+    box-shadow: 0 0 10px 0 $silver
     padding-bottom: 20px
     h4
         padding-top: 10px
