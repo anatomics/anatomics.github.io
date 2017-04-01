@@ -22,7 +22,7 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header h5 a.selected { color: #248; }
 
-.header h1 { font-size: 25px; line-height: 30px; margin-bottom: 10px; padding-bottom: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #288; }
+.header h1 { color: #288; font-size: 25px; line-height: 30px; margin-bottom: 10px; padding-bottom: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .header ul { font-size: 12px; font-weight: bold; text-transform: uppercase; }
 
@@ -36,11 +36,17 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header ul a:hover { color: #248; }
 
-.header ul li { display: block; float: left; line-height: 25px; height: 25px; border-right: silver 1px solid; padding-left: 15px; width: calc(25% - 16px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.header ul li { display: block; float: left; line-height: 25px; height: 25px; border-right: silver 1px solid; padding-left: 15px; overflow: hidden; white-space: nowrap; position: relative; }
 
-.header ul li:nth-child(4n+1) { padding-left: 0; width: calc(25% - 1px); }
+.header ul li:nth-child(4n+1) { padding-left: 0; width: calc(22% - 1px); }
 
-.header ul li:nth-child(4n) { border-right: 0 none; }
+.header ul li:nth-child(4n+2) { width: calc(26% - 16px); }
+
+.header ul li:nth-child(4n+3) { width: calc(26% - 16px); }
+
+.header ul li:nth-child(4n) { border-right: 0 none; width: calc(26% - 16px); }
+
+.header ul li:after { background: ms-linear-gradient(left, rgba(220, 220, 220, 0) 0%, gainsboro 90%); background: moz-linear-gradient(left, rgba(220, 220, 220, 0) 0%, gainsboro 90%); background: -webkit-linear-gradient(left, rgba(220, 220, 220, 0) 0%, gainsboro 90%); background: linear-gradient(left, rgba(220, 220, 220, 0) 0%, gainsboro 90%); display: block; position: absolute; content: " "; z-index: 2; top: 0; right: 0; width: 15px; height: 25px; }
 
 .header ul .last { padding-bottom: 5px; }
 
