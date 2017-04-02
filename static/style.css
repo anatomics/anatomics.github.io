@@ -18,6 +18,8 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .header h5 { font-size: 12px; text-transform: uppercase; line-height: 15px; }
 
+.header h5:first-letter { text-decoration: underline; }
+
 .header h5 a { color: gray; }
 
 .header h5 a.selected { color: #248; }
