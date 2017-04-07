@@ -68,14 +68,14 @@ a { color: black; text-decoration: none; transition: color 0.5s; }
 
 .footer .sponsor { float: right; }
 
-.adsense { background-color: whitesmoke; width: 468px; height: 60px; margin: 0 auto; margin-bottom: 20px; }
+.adsense { background-color: whitesmoke; width: 468px; height: 60px; margin: 0 auto; margin-bottom: 15px; }
 
 .mobilead { display: none; }
 
 @media (max-width: 468px) { .header .square { right: 15px; }
   .content { padding: 0 15px; }
   .adsense { display: none; }
-  .mobilead { display: block; background-color: whitesmoke; width: 320px; height: 50px; margin: 0 auto; margin-bottom: 20px; } }
+  .mobilead { display: block; background-color: whitesmoke; width: 320px; height: 50px; margin: 0 auto; margin-bottom: 15px; } }
 
 @font-face { font-family: "Clear Sans"; font-style: normal; font-weight: normal; src: url(/static/clearsans/regular.woff) format("woff"); }
 
