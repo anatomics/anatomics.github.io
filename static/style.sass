@@ -125,7 +125,7 @@ a
 .main
     background-color: $white
     box-shadow: 0 0 10px 0 $silver
-    padding-bottom: 20px
+    padding-bottom: 15px
     h4
         padding-top: 10px
         &:first-child
@@ -146,16 +146,28 @@ a
 
 .adsense
     background-color: $whitesmoke
-    max-width: 468px
+    width: 468px
     height: 60px
     margin: 0 auto
     margin-bottom: 20px
+
+.mobilead
+    display: none
 
 @media (max-width: 468px)
     .header .square
         right: 15px
     .content
         padding: 0 15px
+    .adsense
+        display: none
+    .mobilead
+        display: block
+        background-color: $whitesmoke
+        width: 320px
+        height: 50px
+        margin: 0 auto
+        margin-bottom: 20px
 
 @font-face
     font-family: "Clear Sans"
