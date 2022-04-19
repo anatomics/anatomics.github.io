@@ -1,4 +1,4 @@
-anatomics.github.com
-====================
+anatomics.github.io
+===================
 
 Proiect: Corpul omenesc
