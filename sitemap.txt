@@ -1,7 +1,6 @@
 https://anatomics.github.io/index.html
 https://anatomics.github.io/limfatic.html
 https://anatomics.github.io/endocrin.html
-https://anatomics.github.io/404.html
 https://anatomics.github.io/circulator.html
 https://anatomics.github.io/muscular/tendoane.html
 https://anatomics.github.io/muscular/index.html
