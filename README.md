@@ -1,4 +1,4 @@
 anatomics.github.io
 ===================
 
-Proiect: Corpul omenesc
+Proiecte: [Biblia](https://verset.github.io/) și [Corpul omenesc](https://anatomics.github.io/).
