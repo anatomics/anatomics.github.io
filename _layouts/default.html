@@ -18,20 +18,15 @@
         </div>
         <h5>
             {% if page.section == "osos" %}
-                <a class="{% if 'osos' in page.url %}selected{% endif %}"
-                    href="/osos.html">{{ page.section }}</a>
+                <a href="/osos.html">{{ page.section }}</a>
             {% elsif page.section == "nervos" %}
-                <a class="{% if 'nervos' in page.url %}selected{% endif %}"
-                    href="/nervos.html">{{ page.section }}</a>
+                <a href="/nervos.html">{{ page.section }}</a>
             {% elsif page.section == "muscular" %}
-                <a class="{% if 'muscular' in page.url %}selected{% endif %}"
-                    href="/muscular.html">{{ page.section }}</a>
+                <a href="/muscular.html">{{ page.section }}</a>
             {% elsif page.section == "reproducator" %}
-                <a class="{% if 'reproducator' in page.url %}selected{% endif %}"
-                    href="/reproducator.html">{{ page.section }}</a>
+                <a href="/reproducator.html">{{ page.section }}</a>
             {% else %}
-                <a class="{% if page.url == '/' %}selected{% endif %}"
-                    href="/">{{ page.section }}</a>
+                <a href="/">{{ page.section }}</a>
             {% endif %}
         </h5>
         <h1>
