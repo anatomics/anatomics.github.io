@@ -18,17 +18,17 @@
         </div>
         <h5>
             {% if page.section == "osos" %}
-                <a class="{% if page.url == '/osos/' %}selected{% endif %}"
-                    href="/osos/">{{ page.section }}</a>
+                <a class="{% if page.url == '/osos.html' %}selected{% endif %}"
+                    href="/osos.html">{{ page.section }}</a>
             {% elsif page.section == "nervos" %}
-                <a class="{% if page.url == '/nervos/' %}selected{% endif %}"
-                    href="/nervos/">{{ page.section }}</a>
+                <a class="{% if page.url == '/nervos.html' %}selected{% endif %}"
+                    href="/nervos.html">{{ page.section }}</a>
             {% elsif page.section == "muscular" %}
-                <a class="{% if page.url == '/muscular/' %}selected{% endif %}"
-                    href="/muscular/">{{ page.section }}</a>
+                <a class="{% if page.url == '/muscular.html' %}selected{% endif %}"
+                    href="/muscular.html">{{ page.section }}</a>
             {% elsif page.section == "reproducator" %}
-                <a class="{% if page.url == '/reproducator/' %}selected{% endif %}"
-                    href="/reproducator/">{{ page.section }}</a>
+                <a class="{% if page.url == '/reproducator.html' %}selected{% endif %}"
+                    href="/reproducator.html">{{ page.section }}</a>
             {% else %}
                 <a class="{% if page.url == '/' %}selected{% endif %}"
                     href="/">{{ page.section }}</a>
