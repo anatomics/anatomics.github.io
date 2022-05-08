@@ -18,16 +18,16 @@
         </div>
         <h5>
             {% if page.section == "osos" %}
-                <a class="{% if page.url == '/osos.html' %}selected{% endif %}"
+                <a class="{% if 'osos' in page.url %}selected{% endif %}"
                     href="/osos.html">{{ page.section }}</a>
             {% elsif page.section == "nervos" %}
-                <a class="{% if page.url == '/nervos.html' %}selected{% endif %}"
+                <a class="{% if 'nervos' in page.url %}selected{% endif %}"
                     href="/nervos.html">{{ page.section }}</a>
             {% elsif page.section == "muscular" %}
-                <a class="{% if page.url == '/muscular.html' %}selected{% endif %}"
+                <a class="{% if 'muscular' in page.url %}selected{% endif %}"
                     href="/muscular.html">{{ page.section }}</a>
             {% elsif page.section == "reproducator" %}
-                <a class="{% if page.url == '/reproducator.html' %}selected{% endif %}"
+                <a class="{% if 'reproducator' in page.url %}selected{% endif %}"
                     href="/reproducator.html">{{ page.section }}</a>
             {% else %}
                 <a class="{% if page.url == '/' %}selected{% endif %}"
